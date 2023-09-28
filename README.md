@@ -1,6 +1,12 @@
 # Deploy Via Surge.sh
 
-## Problem Statement
+## Learning Goals
+
+- Identify how to find a list of Surge commands.
+- Identify the syntax for deploying with Surge.
+- Identify the syntax for re-deploying a deployed site with Surge.
+
+## Introduction
 
 Deploying your web site "to the internet" can be really challenging. You might
 need to buy a plan, configure a software program, learn more Unix commands,
@@ -18,13 +24,7 @@ used to see your site "on the internet." The address is a random name in
 front of `.surge.sh`. You can share this URL with family, friends, poodles, or
 your rally unicycling team.
 
-## Objectives
-
-1.  State how to find a list of Surge commands
-2.  State the syntax for deploying with Surge
-3.  State the syntax for re-deploying a deployed site with Surge
-
-## State How To Find a List Of Surge Commands
+## Identify How To Find a List Of Surge Commands
 
 Surge provides a piece of software called `surge`. _**It is already installed
 on the Flatiron in-browser IDE**_. You can try it out by typing `surge` in the
@@ -68,7 +68,7 @@ Also, very important are the commands at the very end:
 Here the `surge` client tries to teach us how to use it. We'd recommend you
 check out these guides after you finish this lesson.
 
-## State The Syntax For Deploying With Surge
+## Identify The Syntax For Deploying With Surge
 
 Let's create a simple site for surge to deploy. In this lesson, we've got a
 simple [`index.html`][isrc] file and a simple [`style.css`][ssrc] file. Let's
@@ -84,25 +84,25 @@ With `httpserver` running, we can visit our site (in the example above its
 Let's suppose that we're happy with this (very-)purple site and decide that we
 want to share it with the world. To do so with Surge, do the following
 
-1.  End `httpserver` with `Control + c`, if required
-2.  Type `surge`
-3.  At this point, you will be prompted to create an account. Make sure you go to
-    your email inbox to verify it.
-4.  Log into account with newly created email and password. When you type your
-    password into the terminal the cursor won't move!
-5.  Since we're in the `test-surge` directory, Surge asks if that's what we want
-    to deploy. It is. So we hit `Enter`
-6.  Surge creates a site name, in our example its `wooden-quiet.surge.sh`. This
-    seems good enough. So hit `Enter`
-7.  `surge` client uploads the site to Surge
-8.  Open up `wooden-quiet.surge.sh` in a browser tab
+- End `httpserver` with `Control + c`, if required
+- Type `surge`
+- At this point, you will be prompted to create an account. Make sure you go to
+  your email inbox to verify it.
+- Log into account with newly created email and password. When you type your
+  password into the terminal the cursor won't move!
+- Since we're in the `test-surge` directory, Surge asks if that's what we want
+  to deploy. It is. So we hit `Enter`
+- Surge creates a site name, in our example its `wooden-quiet.surge.sh`. This
+  seems good enough. So hit `Enter`
+- `surge` client uploads the site to Surge
+- Open up `wooden-quiet.surge.sh` in a browser tab
 
 Our site is now live on the real-deal internet. We could text this to a friend
 and have them see our (very-)purple creation.
 
 ![Surge Running](https://curriculum-content.s3.amazonaws.com/skills-front-end-web-development/surge/03_surge_running.png)
 
-## State The Syntax For Re-deploying a Deployed Site With Surge
+## Identify The Syntax For Re-deploying a Deployed Site With Surge
 
 Let's suppose that we no longer want to have this mega-purple site. Let's
 change the CSS to be `#aaa`. We'll change the `background` property for `body`
